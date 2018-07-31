@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 
 public class HelloWorld {
-    @RequestMapping(value = "/")
+    @RequestMapping(value = "/eata")
     @ResponseBody
 
     public String hello(){
