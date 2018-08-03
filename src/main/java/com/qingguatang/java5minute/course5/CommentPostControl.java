@@ -18,6 +18,7 @@ public class CommentPostControl {
         Date commentTime = new Date();
 
         comment.setCommentTime(commentTime);
+        comment.setId(UUID.randomUUID().toString());
 
         comments.computeIfAbsent(songId,k->new ArrayList<>()).add(comment);
 

@@ -14,6 +14,8 @@ public class Comment {
     //点赞数
     private int likeNum;
 
+    private String id;
+
 
     public void setIcon(String icon) {
         this.icon = icon;
@@ -53,5 +55,13 @@ public class Comment {
 
     public int getLikeNum() {
         return likeNum;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getId() {
+        return id;
     }
 }
