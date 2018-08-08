@@ -14,14 +14,9 @@ public class SongInfo {
     //专辑图片
     private String albumImg;
 
-    public SongInfo(String name,String singer,String albumName,int commentCount,String lyrics,String albumImg){
-        this.name=name;
-        this.singer=singer;
-        this.albumName=albumName;
-        this.commentCount=commentCount;
-        this.lyrics=lyrics;
-        this.albumImg=albumImg;
-    }
+    private String id;
+
+
 
     public void setName(String name) {
         this.name = name;
@@ -69,5 +64,13 @@ public class SongInfo {
 
     public String getAlbumImg() {
         return albumImg;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getId() {
+        return id;
     }
 }
