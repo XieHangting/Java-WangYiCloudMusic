@@ -12,7 +12,7 @@ import java.util.Map;
 @Controller
 public class SongInfoControl {
 
-    private static final Map<String ,SongInfo> songInfoMap = new HashMap<>();
+    private static  Map<String ,SongInfo> songInfoMap = new HashMap<>();
 
 
     @RequestMapping(value = "/songinfo")
