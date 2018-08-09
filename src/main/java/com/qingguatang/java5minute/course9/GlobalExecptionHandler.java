@@ -17,7 +17,7 @@ public class GlobalExecptionHandler implements ErrorViewResolver {
     @Override
     public ModelAndView resolveErrorView(HttpServletRequest request, HttpStatus status,Map<String , Object>model){
         ModelAndView mav = new ModelAndView();
-        mav.addObject("url",request.getRequestURI());
+        mav.addObject("url",request.getRequestURL());
         mav.addAllObjects(model);
         mav.setViewName("error");
         return mav;
